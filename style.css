@@ -1,0 +1,44 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@300;400;900&display=swap');
+
+:root {
+    --gold: #bf953f;
+    --gold-light: #fcf6ba;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+}
+
+/* Texte Doré Premium */
+.gold-text {
+    background: linear-gradient(135deg, var(--gold), var(--gold-light), #b38728, #fbf5b7, #aa771c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Cartes Glassmorphism */
+.glass-card {
+    background: rgba(15, 15, 15, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(191, 149, 63, 0.2);
+    border-radius: 4px;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.8);
+}
+
+/* Animation des onglets */
+section {
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Style de l'input admin */
+#adminCode {
+    text-shadow: 0 0 15px rgba(191, 149, 63, 0.5);
+}
